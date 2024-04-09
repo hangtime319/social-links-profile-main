@@ -42,9 +42,10 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--grey);
+    background-color: var(--dark-grey);
     padding: 20px;
     border-radius: 8px;
+    width: 250px;
 }
 
 .container img {
@@ -54,16 +55,52 @@ main {
 }
 
 .container h1 {
-    
-    font-size: 0.875rem;
-    margin: 5px auto;
+    font-size: 1rem;
+    text-align: center;
+    margin: 8px auto;
 }
 
 .container h2 {
     color: var(--green);
-    font-size: 0.5rem;
+    font-size: 0.575rem;
+    text-align: center;
 }
 
+.container p {
+    font-size: 0.6rem;
+    font-weight: 200;
+    text-align: center;
+    margin: 15px auto;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.social li {
+    width: 100%;
+    text-align: center;
+}
+
+.social li a{
+    font-size: 0.6rem;
+    font-weight: 600;
+    background-color: var(--grey);
+    display: block;
+    padding: 8px 10px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.social li a:hover {
+    background-color: var(--green);
+    color: var(--dark-grey);
+}
 
 .attribution { font-size: 11px; text-align: center; color: var(--white);}
 .attribution a { color: hsl(228, 45%, 44%); }
